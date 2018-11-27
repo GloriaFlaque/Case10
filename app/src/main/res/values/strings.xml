@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Case10</string>
+    <string-array name="spinnerItem">
+        <item>pc</item>
+        <item>xbl</item>
+        <item>psn</item>
+    </string-array>
+</resources>

@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         ckickbuttongo();
 
-        setTitle("Fortnite");
     }
 
     private void changeData(String plattaform,String epic_nickname){
@@ -72,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             epic_nickname = nickName.getText().toString();
             Log.d("Cambio","plataforma "+plattaform+" epic_name "+epic_nickname);
             forniteViewModel.getData(plattaform, epic_nickname);
-            setTitle(epic_nickname);
+
         });
 
     }

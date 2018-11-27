@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Case10</string>
+    <string name="app_name">Fortnite</string>
     <string-array name="spinnerItem">
         <item>pc</item>
         <item>xbl</item>

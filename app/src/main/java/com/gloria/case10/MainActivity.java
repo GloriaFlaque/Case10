@@ -21,7 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText nick_name_fornite;
+    private EditText nickName;
     private Spinner spinner;
     private FortniteAdapter adapter;
     private RecyclerView recyclerView;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nick_name_fornite = findViewById(R.id.nick_name_fornite);
+        nickName = findViewById(R.id.nickname);
         spinner = findViewById(R.id.spinner);
         btnGo = findViewById(R.id.btnGo);
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private void ckickbuttongo(){
         btnGo.setOnClickListener(v -> {
             plattaform = spinner.getSelectedItem().toString();
-            epic_nickname = nick_name_fornite.getText().toString();
+            epic_nickname = nickName.getText().toString();
             Log.d("Cambio","plataforma "+plattaform+" epic_name "+epic_nickname);
             forniteViewModel.getData(plattaform, epic_nickname);
             setTitle(epic_nickname);

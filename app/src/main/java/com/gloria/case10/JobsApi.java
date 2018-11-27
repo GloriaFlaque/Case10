@@ -11,7 +11,7 @@ import retrofit2.http.Path;
 
 public interface JobsApi {
 
-    @Headers("TRN-Api-Key: 3181e97d-6177-42ac-9c02-e61f5934dffd")
+    @Headers("TRN-Api-Key: 7a19dd2d-613d-4215-8537-ba4672ba12d8")
 
     @GET("v1/profile/{platform}/{epic-nickname}")
     Observable<Fortnite> getInfoFornite(@Path("platform") String platform , @Path("epic-nickname") String epic_nickname);
